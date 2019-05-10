@@ -1,0 +1,37 @@
+
+<h2 style="text-align: center">
+
+ Welcome to a Game City! Your card Balance Amount</h2>
+<div class="container">
+  <div class="table-responsive">
+    <table class="table table-striped" style="background:pink" border="3px">
+      <thead>
+        <tr>
+          <th style="width: 20%">
+             ID
+             </th>
+          
+          <th style="width: 20%">
+             Game Name
+          </th>
+          <th style="width: 20%">
+            Amount
+          </th>
+          <th style="width:20%">
+            Gaming link
+          </th>
+         </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let g of games">
+          <td>{{g.id}}</td>
+          <td>{{g.game_name}}</td>
+          <td>{{g.amount}}</td>
+          <td>
+            <a href="http://localhost:3000/games"> PlayNow </a>
+          </td>
+        </tr>
+       </tbody>
+       </table>
+     </div>
+    </div>

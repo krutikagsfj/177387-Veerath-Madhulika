@@ -1,0 +1,37 @@
+
+
+
+
+{
+    "games":[
+        {
+        "id": 1,
+       "game_name": "Shooting",
+       "amount": 105
+        },
+        {
+            "id": 2,
+           "game_name":"Angry Birds",
+           "amount":95
+            },
+            {
+                "id": 3,
+               "game_name":"Temple Run",
+               "amount":200
+                },
+                {
+                    "id": 4,
+                   "game_name":"Bike Race",
+                   "amount":90
+                    },
+                    {
+                        "id": 5,
+                       "game_name":"Air Control",
+                       "amount":800
+                        }
+    
+
+                
+
+    ]
+}

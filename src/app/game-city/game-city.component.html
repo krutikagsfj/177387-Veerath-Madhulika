@@ -1,0 +1,44 @@
+<div col-md-6>
+  <br>
+  <br>
+  <div class="container">
+  <h1 style="color:blue">Welcome to Capgemini:177387</h1>
+  <h2 class="text-center">Welcome to GameCity:Experience the Online Gaming Experience</h2>
+  <form [formGroup]="addForm" novalidate>
+    <div class="form-group">
+      <label for="gameName"> Name:</label>
+      <input formControlName="game_name" placeholder="Game Name" name="gameName" class="form-control" id="gameName">
+
+      <div class="alert alert-danger" *ngIf="addForm.get('game_name')
+        .hasError('required') && addForm.get('game_name')
+        .touched">Game Name is required
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input formControlName="address" placeholder="Address" name="address" class="form-control">
+      <div class="alert alert-danger" *ngIf="addForm.get('address')
+      .hasError('maxlength') && addForm.get
+      ('address').touched">
+        Address is required and should be less than 5 characters.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="amount">Amount to Pay:</label>
+      <input formControlName="amount" placeholder="Enter amount" name="amount" class="form-control">
+      <div class="alert alert-danger" *ngIf="addForm.get
+      ('amount').hasError('maxlength') && addForm.get
+      ('amount').touched">
+        Amount is required and should be less than 4 characters.
+      </div>
+    </div>
+    <button class="btn btn-success" [disabled]='addForm.invalid' (click)="onSubmit()">Buy Card</button>
+    <br>
+
+    <h6>Note:100 Rs will be deducted for service charge</h6>
+   
+
+
+  </form>
+</div>
+</div>
